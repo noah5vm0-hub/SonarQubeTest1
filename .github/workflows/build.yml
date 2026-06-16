@@ -36,7 +36,7 @@ jobs:
       # 修改增加點 3：改用 SonarCloud 官方 Action，並補上 GITHUB_TOKEN
       # ----------------------------------------------------
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@713881670b6b3676cda39549040e2d88c70d582e # 換成雲端專用的 Action
+        uses: SonarSource/sonarcloud-github-action@eb211723266fe8e83102bac7361f0a05c3ac1d1b # 換成雲端專用的 Action
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # GitHub 自動注入，不用手動去 Settings 設定
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}     # 你之前在 Settings 設定好的 SonarCloud Token
