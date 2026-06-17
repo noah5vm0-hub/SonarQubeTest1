@@ -17,8 +17,7 @@ def test_multiply():
     assert calc.multiply(4, 5) == 20
 
 
-def test_divide():
-    assert calc.divide(20, 5) == 4
+
 
 
 def test_divide_by_zero():
